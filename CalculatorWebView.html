@@ -38,21 +38,17 @@ margin: 0 auto;
 </tr>
 </table>
 <script>
-var add = 0;
-var subtract = 0;
-var multiply = 0;
-var divide = 0;
+
 
 function math() {
 //  document.getElementById('answer').value = '' ;
 var x = document.getElementById("answer").value;
 var res = x.split(" ");
 alert(res);
-document.getElementById('answer').value = res + '' ;
+var ansWer = eval(x);
+document.getElementById('answer').value = ansWer + '' ;
 }
-function add() {
-var add = 1;
-}
+
 
 
 </script>
