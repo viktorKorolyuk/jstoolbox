@@ -155,6 +155,9 @@ font-family: Comic-sans;
         width: 200px; 
       word-wrap: break-word;   
    }
-
+iframe {
+	margin: 0 auto;
+		display:block;
+}
 
     

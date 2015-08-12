@@ -1,15 +1,61 @@
 <html>
-
+<head>
+<style>
+button {
+border: 1px solid #000;
+background-color: grey;
+font-size: 40px;
+font-weight: bold;
+}
+table {
+margin: 0 auto;
+}
+</style>
+</head>
 <body>
-<button>1</button>
-<button>2</button>
-<button>3</button>
-<button>4</button>
-<button>5</button>
-<button>6</button>
-<button>7</button>
-<button>8</button>
-<button>9</button>
-<button>0</button>
+<textarea rows="4" cols="40" id="answer">Press buttons OR type in box to enter mathematical formula, then press submit</textarea>
+<table>
+<tr>
+	<td><button>1</button></td>
+	<td><button>2</button></td>
+	<td><button>3</button></td>
+</tr>
+<tr>
+	<td><button>4</button></td>
+	<td><button>5</button></td>
+	<td><button>6</button></td>
+</tr>
+<tr>
+	<td><button>7</button></td>
+	<td><button>8</button></td>
+	<td><button>9</button></td>
+</tr>
+<tr>
+<td>
+<!--Blank Spot-->
+</td>
+<td><button>0</button></td>
+</tr>
+</table>
+<script>
+var add = 0;
+var subtract = 0;
+var multiply = 0;
+var divide = 0;
+
+function math() {
+//  document.getElementById('answer').value = '' ;
+var x = document.getElementById("answer").value;
+var res = x.split(" ");
+alert(res);
+document.getElementById('answer').value = res + '' ;
+}
+function add() {
+var add = 1;
+}
+
+
+</script>
+<button onClick="	math();	">Submit</button>
 </body>
 </html>
