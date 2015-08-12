@@ -1,119 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ViktorKorolyuk.com</title>
+<title>WeaponsArrayJS [VKHSOFT]</title>
+    
+    <link rel="icon" href="http://icons.iconarchive.com/icons/mazenl77/I-like-buttons-3a/512/Cute-Ball-Go-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
 <style>
-body {
-/*	background-image: url("http://www.geant.net/Resources/PartnerResources/Partner%20Resources%20Image%20Library/Image%2010_958642.jpg");
-background-repeat:no-repeat;
-
-background-size: cover;
-*/
-background-color: #F5F5F5;
-}
-#infoText1 {
-
-    color: #00ff00;
- border: 4px solid #a1a1a1;
-    padding: 20px 200px; 
-    background: #940099;
-    width: 300px;
-	 margin:0 auto;
-    border -radius: 15px;
-font-family: Comic-sans;
-
-}
-@font-face {
-    font-family: Comic-sans;
-    src: url(SuperMario256.ttf);
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-#titles {
-	color: red;
-font-family: Comic-sans;
-	text-align: center;
-
-    text-shadow: 5px 5px 5px green;
-
-}
-#bottom {
-text-align:center;
-position:fixed;bottom:0;
-left: 0;
-border: 0px solid red;
-padding: 1px 0px ;
-background: #222;
-width: 100vw;
-border-radius: 0px;
-font-size: 14px;
-color: white;
-box-shadow: 0 0 20px grey;
-/*
-width: 100vw;
-    height: 25px;
-    padding-top: 5px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #222;
-    font-family: Open Sans;
-    box-shadow: 0 0 20px grey;
-*/
-}
-
-#copy {
-font-family: Open Sans;
-}
-#start{
-  
- 
-    padding: 20px 200px; 
-  
-    width: 300px;
-	 margin:0 auto;
-    border -radius: 15px;
-}
-button {
-border: 1px solid #2060f5;
-background-color: purple;
-font-size: 20px;
-font-family: "Open Sans";
-color: #fff;
-font-weight: bold;
-padding: 16px;
-line-height: 20px;
-float: right;
-margin: 10px;
-outline: none;
-
-
     
-    
-
-}
-
-
 </style>
 </head>
 <body>
-<!-- <img id="myImage" onclick="changeImage()" src="http://www.geant.net/Resources/PartnerResources/Partner%20Resources%20Image%20Library/Image%2010_958642.jpg" width="280" height="280">  -->
 
-<h1 id=titles>ToolBox (Java Script)</h1>
-<div id=infoText1>
-<!--  <p>Hey, this is the online version if the wepoans array. This is for those who dont want to download any applications, and they want a fast version to load up and use.
-This webapp wont have all the applicatons, like the desktop one has but we will tried our best to include all of the capabilites! :)</p> -->
+    <div id="navbar">
+<h1 id=titles>ToolBox (.JavaScript)</h1>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <div id="main">
+        
+<div id=loader align=right;>
+    
+  
+    <p>Choose:</p>
+    
+     
+            <button id="calcButton" onmouseover="calcDes();" onmouseout="removeCalcText()"  onClick="document.getElementById('loader').style.display = 'none'; document.getElementById('descript').style.display = 'none';">Calculator</button>
+            
+           <button id="passgenButton" onmouseover="passDes()" onmouseout="removePassText()" >Password Gen</button>
+           <button id="converterButton" onmouseover="convertDes()" onmouseout="removeConvText()"  >Converter</button>
+           <button id="consoleButton" onmouseover="consoleDes()" onmouseout="removeText()" >[Beta] Console</button>
+           <button id="phoneButton" onmouseover="phonenumDes()" onmouseout="removeText()" >Phone # Decoder</button>
+    <button id="phoneButton" onmouseover="bORsDes()" onmouseout="removeText()" >Browser/System Stats</button>
+        
+        
+            
+       
 </div>
-<script src=WeaponsArray.js > main();</script>
+       
+        <div id="descript">
+  <!--          <table width="200px" height="340px" background="recources/Description_Panel.png" cellpadding="5" cellspacing="0">
+<tr>
+<td valign="bottom">
+<p><b><font color="#ffffff">
+(text to appear over the image goes here)
+</font></b></p>
+</td>
+</tr>
+</table>
+-->
+            
+            
+          <img src="recources/Description_Panel.png" width = 200px; height = 340px;></img>
+       
+            
 
-<div id=start>
-
-   
+            <p id="des"></p>
+        <script src="descript.js"> 
+            //Description Code is in external .js file
+            
+            
+            </script>
+           
+            </div>
 </div>
 
+
+
+    </div>
+    
+</div>
+<br>
+    <br>
+    <br>
+    <br>
 <div id=bottom>
 <p id=copy>Copyright (c) 2015</p>
 <p id = copy>Owners-Viktor Korolyuk & htmlguy</p>
