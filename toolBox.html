@@ -15,19 +15,11 @@
 <body>
 
     <div id="navbar">
-<h1 id=titles>ToolBox (.JavaScript)</h1>
-        
+<h1 id=titles onClick="location.reload();">ToolBox (.JavaScript)</h1>
     </div>
-    
-    
-    
-    
-    
-    
     <br>
     <br>
     <br>
-    
     <br>
     <div id="main">
         
@@ -43,7 +35,7 @@
               iframeCalc.width = '400px';
               iframeCalc.height = '400px';
               iframeCalc.frameBorder = '0';
-               document.body.appendChild(iframeCalc);">Calculator</button>
+               document.querySelector('#main').appendChild(iframeCalc);">Calculator</button>
             
            <button id="passgenButton" onmouseover="passDes()" onmouseout="removePassText()" >Password Gen</button>
            <button id="converterButton" onmouseover="convertDes()" onmouseout="removeConvText()"  >Converter</button>
@@ -63,7 +55,8 @@
        
             
 
-            <p id="des"></p>
+            <p id="des">
+            </p>
         <script src="descript.js"> 
             //Description Code is in external .js file
             

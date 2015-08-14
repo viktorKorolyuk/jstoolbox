@@ -40,6 +40,9 @@ margin:0 auto;
   
   display: inline-block;
 
+	position: relative;
+	width: 200px;
+	height: 340px;
 
 }
 
@@ -152,8 +155,12 @@ font-family: Comic-sans;
 }
    
    #des {
-        width: 200px; 
-      word-wrap: break-word;   
+        width: 160px; 
+      word-wrap: break-word;
+     top: 5px;
+      position: absolute;    /* |http://www.w3schools.com/cssref/pr_class_position.asp|  Does somting with positioning somthing insode of a div, with it bieng relative to teh corditates of the div it is inside of*/
+    
+      right: 5px;
    }
 iframe {
 	margin: 0 auto;
