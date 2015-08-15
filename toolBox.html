@@ -26,16 +26,10 @@
 <div id=loader align=right;>
     
   
-    <p>Choose:</p>
+    
     
      
-            <button id="calcButton" onmouseover="calcDes();" onmouseout="removeCalcText()"  onClick="document.getElementById('loader').style.display = 'none'; document.getElementById('descript').style.display = 'none';
-             var iframeCalc = document.createElement('iframe');
-              iframeCalc.src = 'CalculatorWebView.html';
-              iframeCalc.width = '400px';
-              iframeCalc.height = '400px';
-              iframeCalc.frameBorder = '0';
-               document.querySelector('#main').appendChild(iframeCalc);">Calculator</button>
+            <button id="calcButton" onmouseover="calcDes();" onmouseout="removeCalcText()"  onClick="document.getElementById('loader').style.display = 'none'; document.getElementById('descript').style.display = 'none';">Calculator</button>
             
            <button id="passgenButton" onmouseover="passDes()" onmouseout="removePassText()" >Password Gen</button>
            <button id="converterButton" onmouseover="convertDes()" onmouseout="removeConvText()"  >Converter</button>
@@ -48,28 +42,7 @@
        
 </div>
        
-        <div id="descript">
-   
-            
-          <img src="recources/Description_Panel.png" width = 200px; height = 340px;></img>
        
-            
-
-            <p id="des">
-            </p>
-        <script src="descript.js"> 
-            //Description Code is in external .js file
-            
-            
-            </script>
-           
-            </div>
-</div>
-
-
-
-    </div>
-    
 </div>
 <br>
     <br>
