@@ -1,10 +1,13 @@
 <html>
 <head>
 <style>
+    body {
+     background-color: 242424;   
+    }
 button {
 border: 1px solid #000;
 background-color: grey;
-font-size: 40px;
+font-size: 10px;
 font-weight: bold;
 }
 table {
@@ -14,7 +17,7 @@ margin: 0 auto;
 </head>
 <body>
 	
-<textarea rows="4" cols="40" id="answer">Press buttons OR type in box to enter mathematical formula, then press submit</textarea>
+<textarea rows="3" cols="25" id="answer">Press buttons OR type in box to enter mathematical formula, then press submit</textarea>
 <table>
 <tr>
 	<td><button>1</button></td>
@@ -39,8 +42,6 @@ margin: 0 auto;
 </tr>
 </table>
 <script>
-
-
 function math() {
 //  document.getElementById('answer').value = '' ;
 var x = document.getElementById("answer").value;
@@ -49,10 +50,7 @@ alert(res);
 var ansWer = eval(x);
 document.getElementById('answer').value = ansWer + '' ;
 }
-
-
-
 </script>
-<button onClick="	math();	">Submit</button>
+<button onClick="math();">Submit</button>
 </body>
 </html>
