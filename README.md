@@ -1,7 +1,5 @@
 # README #
 
-Here is the online version of weapons array that I am charged to work with.
+This is an online tool created to aid productivity whilist using a chrome book.
+If you would for somthing to be changed or added please let me know, or request a merge with your fix.
 
-# TO-Do #
-
-Fix Stuff
