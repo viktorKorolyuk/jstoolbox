@@ -4,6 +4,8 @@
 <head>
     <title>WeaponsArrayJS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/recources/jquery/jquery-1.12.4.js"></script>
+    <script src="/recources/jquery/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -11,8 +13,14 @@
         <h1>Javascript Toolbox</h1>
     </div>
     <div class="main">
-        <div class="toolbox"><iframe src="CalculatorWebView.html" /></div>
+        <button id="add" onclick="">Add one</button>
+        <div class="toolbox" id="toolbox">
+            <div class="navbar"><a>[x][-][^]</a></div>
+            <iframe src="CalculatorWebView.html"></iframe>
+        </div>
     </div>
+    <script src="draggable.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

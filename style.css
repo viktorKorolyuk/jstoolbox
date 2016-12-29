@@ -1,12 +1,45 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #f7f7f7;
     font-family: sans-serif;
+    margin: 0em;
 }
-.title {
 
+.title {
+    box-shadow: 1px 1px 5px black;
+    padding: 1em;
+}
+
+.main {
+    margin: 1em;
 }
 
 .toolbox {
-    width:20%;
-    height:20em;
+    width: 25em;
+    height: 20em;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    border-radius: 0.4em;
+}
+
+.toolbox * {
+    border: none;
+}
+
+.toolbox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 1em;
+    background-color: #aaa;
+    text-align: right;
+    border-radius: 0.4em 0.4em 0em 0em;
+}
+
+.navbar a {
+    font-size: 0.8em;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
