@@ -14,8 +14,6 @@ var draggable = function (id) {
         y = e.pageY;
         if (dragging) {
             drag(document.getElementById(currDraggableID), offsetX);
-        } else {
-            document.getElementById(currDraggableID).style.zIndex = 0;
         }
     });
     this.elem.addEventListener("mousedown", function (e) {
