@@ -1,39 +1,51 @@
-function setDraggable(elem) {
-    var x;
-    var y;
-    var oldx;
-    var xded;
+var draggable = function (id) {
+
+    var winz = 5;
+    this.id = id;
+    console.log(this.id);
+    console.log(document.getElementById(this.id + ""));
+    var x, y;
+    var offsetX;
     var dragging = false;
-    elem.style.left = "0px";
-
-    window.onmousemove = function (e) {
-        x = e.clientX;
-        y = e.clientY;
-        if (dragging) drag(toolbox);
-    }
-
-    elem.onclick = function () {
-        if (!dragging) {
-            console.log(this);
-            dragging = true;
-            xded = parseInt(this.style.left) - x;
+    this.elem = document.getElementById(id + "");
+    this.elem.style.left = "0px";
+    document.addEventListener("mousemove", function (e) {
+        x = e.pageX;
+        y = e.pageY;
+        if (dragging) {
+            drag(document.getElementById(currDraggableID), offsetX);
         } else {
-            dragging = false;
-            //oldx = 0;
-            return;
+            document.getElementById(currDraggableID).style.zIndex = 0;
         }
+    });
+    this.elem.addEventListener("mousedown", function (e) {
+        // console.log(this);
+        e.preventDefault();
+        dragging = true;
+        console.log(dragging);
+        offsetX = parseInt(this.style.left) - e.pageX;
+        console.log(offsetX);
+        currDraggableID = this.getAttribute("id");
+        console.log(`Current ID selected: ${currDraggableID}`);
+    });
 
-    }
+    this.elem.addEventListener("mouseup", function (e) {
+        dragging = false;
 
-    function drag(z) {
-        z.style.position = "absolute";
+    });
 
-        z.style.right = "0px";
-        z.style.bottom = "0px";
-        z.style.top = "0px";
+    drag = function (e, oX) {
+        // console.log(id);
+        e.style.position = "absolute";
+
+        e.style.right = "0px";
+        e.style.bottom = "0px";
+        e.style.top = "0px";
         //now we know where the item is, lets move it to the cursor.
 
-        z.style.left = `${x + xded}px`;
-        z.style.top = `${y - 5}px`;
+        e.style.left = `${x + oX}px`;
+        e.style.top = `${y - 5}px`;
+        e.style.zIndex = e.style.zIndex++;
+
     }
 }
