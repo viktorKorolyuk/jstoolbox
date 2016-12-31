@@ -14,7 +14,7 @@ add_but.onclick = function () { //add a new frame to the "scene"
     a1.setAttribute("class", "close");
 
     var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "recources/apps/chooser.html");
+    iframe.setAttribute("src", "resources/apps/chooser.html");
 
     nav.appendChild(a1);
     toolbox.appendChild(nav);
