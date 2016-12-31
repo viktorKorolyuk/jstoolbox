@@ -1,0 +1,17 @@
+body {
+    background-color: #111;
+}
+
+.options {
+    background-color: #111;
+    color: white;
+    width: inherit;
+    display: block;
+    border: 0px solid white;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.options:hover {
+    background-color: #222;
+}

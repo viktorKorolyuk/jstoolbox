@@ -9,3 +9,5 @@ Welcome to an online tool designed to improve your proficency whilist using a we
 - Add games list
 - Add timer/stopwatch
 - Add customization of toolbox.
+- Add windows XP window error easter egg.
+- Implement [nova]'s easter egg library.

@@ -1,8 +1,3 @@
-/**
-
-new draggable("toolbox"); //demo
-var app;
-*/
 var currDraggableID = "toolbox";
 
 var add_but = document.getElementById("add");
@@ -18,17 +13,17 @@ add_but.onclick = function () { //add a new frame to the "scene"
     var a1 = document.createElement("div");
     a1.setAttribute("class", "close");
 
-    nav.appendChild(a1);
-
     var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "CalculatorWebView.html");
+    iframe.setAttribute("src", "recources/apps/chooser.html");
+
+    nav.appendChild(a1);
     toolbox.appendChild(nav);
     toolbox.appendChild(iframe);
-    var id = `${Math.random() * 300}`;
+    var id = `${Math.random() * 300}`; //adding an identifier to the element for later use.
+
     toolbox.setAttribute("id", id);
     document.body.appendChild(toolbox);
 
-    console.log(document.getElementById(id));
     //making the window draggable
     new draggable(id);
     a1.addEventListener("click", function () {

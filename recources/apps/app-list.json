@@ -1,0 +1,22 @@
+[{
+    "name": "Calculator",
+    "url": "Calculator/CalculatorWebView.html"
+}, {
+    "name": "Stopwatch",
+    "url": "127.0.0.1"
+}, {
+    "name": "Timer",
+    "url": "127.0.0.1"
+}, {
+    "name": "Notes",
+    "url": "127.0.0.1"
+}, {
+    "name": "Drawing",
+    "url": "127.0.0.1"
+}, {
+    "name": "Fun javascript",
+    "url": "127.0.0.1"
+}, {
+    "name": "Javascript console",
+    "url": "127.0.0.1"
+}]
