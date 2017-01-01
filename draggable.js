@@ -9,6 +9,7 @@ var draggable = function (id) {
     var dragging = false;
     this.elem = document.getElementById(id + "");
     this.elem.style.left = "0px";
+
     document.addEventListener("mousemove", function (e) {
         x = e.pageX;
         y = e.pageY;
@@ -17,7 +18,6 @@ var draggable = function (id) {
         }
     });
     this.elem.addEventListener("mousedown", function (e) {
-        // console.log(this);
         e.preventDefault();
         dragging = true;
         console.log(dragging);
@@ -29,11 +29,9 @@ var draggable = function (id) {
 
     this.elem.addEventListener("mouseup", function (e) {
         dragging = false;
-
     });
 
     drag = function (e, oX) {
-        // console.log(id);
         e.style.position = "absolute";
 
         e.style.right = "0px";
@@ -44,6 +42,5 @@ var draggable = function (id) {
         e.style.left = `${x + oX}px`;
         e.style.top = `${y - 5}px`;
         e.style.zIndex = e.style.zIndex++;
-
     }
 }
