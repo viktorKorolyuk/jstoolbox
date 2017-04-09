@@ -1,7 +1,5 @@
 # in development #
-Welcome to an online tool designed to improve your proficency whilist using a web browser or CHROME OS.
-
-- I plan to keep this code in constant development, and to improve the "clean-ness" of the code.
+Welcome to an online tool designed to improve your productivity whilst using a web browser or CHROME OS.
 
 # TO-DO #
 - Add touchscreen support
@@ -11,4 +9,4 @@ Welcome to an online tool designed to improve your proficency whilist using a we
 - Add timer/stopwatch
 - Add customization of toolbox.
 - Add windows XP window error easter egg.
-- Implement [nova]'s easter egg library.
+- Fix window z-index overlapping
