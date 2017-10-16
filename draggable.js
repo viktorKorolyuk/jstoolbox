@@ -1,5 +1,12 @@
-var draggable = function (id) {
+/*
+ Name: Draggable.js
+ Task: Script to allow items to be dragged in window.
+ Creator: Viktor Korolyuk
+ Copyright: none
+ */
 
+var draggable = function (id) {
+    
     var winz = 5;
     this.id = id;
     console.log(this.id);

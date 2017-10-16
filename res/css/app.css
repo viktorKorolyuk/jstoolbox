@@ -1,0 +1,23 @@
+body {
+    background-color: #111;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.options {
+    background-color: #111;
+    color: #aaa;
+    width: inherit;
+    display: block;
+    border: 0px solid white;
+    padding: 1em;
+    text-decoration: none;
+    transition: background-color .5s; 
+}
+
+.options:hover {
+    color: black;
+    background-color: #aaa;
+}

@@ -7,15 +7,17 @@
     <script src="chooser-options.js"></script>
     <script>
         if (window.location.hostname !== "127.0.0.1") {
-            document.head.innerHTML = `${document.head.innerHTML}\n<link rel="stylesheet" href="/jstoolbox/resources/css/app.css"></link>`;
+            document.head.innerHTML = `${document.head.innerHTML}\n<link rel="stylesheet" href="/res/css/app.css"></link>`;
         } else {
-            document.head.innerHTML = `${document.head.innerHTML}\n<link rel="stylesheet" href="/resources/css/app.css"></link>`;
+            document.head.innerHTML = `${document.head.innerHTML}\n<link rel="stylesheet" href="/res/css/app.css"></link>`;
         }
     </script>
 </head>
 
 <body>
+    <h1 style="text-align:center; color: white;">Options</h1>
     <center id="id">
+        
         <!-- Javascript fills choices here, I am proud of that design, less work for me! :) -->
     </center>
 </body>
